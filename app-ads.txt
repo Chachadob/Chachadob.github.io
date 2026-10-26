@@ -1,0 +1,3 @@
+# Studio Chaahn (En Garde) — app-ads.txt
+# Google AdMob (publisher ID from the AdMob app ID ca-app-pub-8295672163718592~...)
+google.com, pub-8295672163718592, DIRECT, f08c47fec0942fa0
