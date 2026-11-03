@@ -23,6 +23,12 @@
   .top { max-width: 760px; margin: 0 auto; padding: 16px; font-size: 14px; }
   .top a { color: var(--muted); text-decoration: none; }
   .top a:hover { color: var(--fg); }
+  .studio { display: inline-flex; align-items: center; gap: 10px; }
+  .studio .mark { display: block; background: #fff; border-radius: 8px; padding: 4px 6px; box-shadow: 0 0 0 1px var(--line); }
+  .studio .mark img { display: block; height: 22px; width: auto; }
+  .studio span:last-child { display: flex; flex-direction: column; line-height: 1.2; color: var(--fg); font-weight: 600; font-size: 14px; }
+  .studio small { color: var(--muted); font-weight: 400; font-size: 12px; }
+  .studio:hover .mark { box-shadow: 0 0 0 2px var(--accent); }
   main { max-width: 760px; margin: 0 auto; padding: 16px 16px 32px; text-align: center; }
 
   .sky { position: relative; height: 220px; border-radius: 24px; overflow: hidden; margin: 8px 0 28px;
@@ -53,7 +59,7 @@
 </style>
 </head>
 <body>
-<div class="top"><a href="../">← 스튜디오 차안 · Studio Chaahn</a></div>
+<div class="top"><a class="studio" href="../" aria-label="스튜디오 차안 메인으로"><span class="mark"><img src="../assets/studio_logo.png" alt="" width="720" height="345"></span><span>스튜디오 차안<small>Studio Chaahn</small></span></a></div>
 <main>
   <div class="sky" aria-hidden="true"><span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span></div>
   <h1>구름 마을</h1>

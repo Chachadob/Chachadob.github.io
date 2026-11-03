@@ -56,8 +56,16 @@
   .contact a { color: var(--accent); font-weight: 600; text-decoration: none; }
   .contact a:hover { text-decoration: underline; }
 
-  footer { max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
-  footer p { margin: 4px 0; }
+  footer.biz { max-width: 880px; margin: 0 auto; padding: 24px 16px 48px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 12px; line-height: 1.7; }
+  footer.biz p { margin: 0; display: flex; flex-wrap: wrap; }
+  footer.biz span { white-space: nowrap; }
+  footer.biz span + span::before { content: "|"; margin: 0 8px; color: var(--line); }
+  footer.biz a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+  footer.biz a:hover { color: var(--fg); }
+  footer.biz .copy { margin-top: 8px; }
+  /* 좁은 화면: 줄 앞에 '|' 가 남지 않게 항목마다 한 줄 */
+  @media (max-width: 560px) { footer.biz p { display: block; } footer.biz span { display: block; white-space: normal; } footer.biz span + span::before { content: none; } }
 </style>
 </head>
 <body>
@@ -98,9 +106,12 @@
     <p><a href="mailto:studiochaahn@gmail.com">studiochaahn@gmail.com</a></p>
   </div>
 </main>
-<footer>
-  <p>© 2026 스튜디오 차안 (Studio Chaahn)</p>
-  <p>게임별 개인정보처리방침은 각 게임 페이지 아래에 있어요. · Privacy policies are linked on each game page.</p>
+<footer class="biz">
+  <!-- 사업자 정보: 사업자등록번호는 아래 두 곳(표시 글자 · 공정위 링크의 wrkr_no=숫자 10자리)을 함께 바꾼다 -->
+  <p><span>스튜디오 차안</span><span>대표 차성욱</span></p>
+  <p><span>사업자등록번호 000-00-00000</span><span>통신판매업 신고 제2026-서울서초-3616호</span></p>
+  <p><span>문의 <a href="mailto:studiochaahn@gmail.com">studiochaahn@gmail.com</a></span><span><a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=0000000000" target="_blank" rel="noopener">사업자정보 확인</a></span></p>
+  <p class="copy">© 2026 Studio Chaahn</p>
 </footer>
 </body>
 </html>
