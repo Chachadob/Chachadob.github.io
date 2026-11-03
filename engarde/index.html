@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>앙가르드 En Garde · 스튜디오 차안</title>
+<meta name="description" content="앙가르드(En Garde) — 1:1 실시간 펜싱 대전 모바일 게임. 스튜디오 차안(Studio Chaahn).">
+<meta property="og:title" content="앙가르드 En Garde">
+<meta property="og:description" content="1:1 실시간 펜싱 대전 모바일 게임 · Real-time 1v1 fencing for mobile">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chachadob.github.io/engarde/">
+<meta property="og:image" content="https://chachadob.github.io/engarde/assets/icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0c0f13; --panel: #151a20; --line: #2b343f;
+    --fg: #e9edf1; --muted: #8693a1; --accent: #f2a93b; --red: #e5484d; --green: #2fbf71;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); line-height: 1.6;
+    font-family: system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+  a { color: inherit; }
+  .top { max-width: 760px; margin: 0 auto; padding: 16px; font-size: 14px; }
+  .top a { color: var(--muted); text-decoration: none; }
+  .top a:hover { color: var(--fg); }
+  main { max-width: 760px; margin: 0 auto; padding: 16px 16px 32px; }
+
+  .hero { text-align: center; padding: 24px 0 8px; }
+  .icon { width: 112px; height: 112px; border-radius: 26px; display: block; margin: 0 auto 20px; image-rendering: pixelated; box-shadow: 0 0 0 2px var(--line); }
+  .wordmark { display: block; width: min(440px, 88vw); height: auto; margin: 0 auto; }
+  .tagline { margin: 18px 0 0; font-size: 18px; }
+  .en { color: var(--muted); font-size: 15px; }
+  .status { display: inline-block; margin-top: 14px; font-size: 13px; padding: 3px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+
+  h2 { font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 48px 0 14px; display: flex; align-items: center; gap: 10px; }
+  h2::before { content: ""; width: 4px; height: 16px; background: var(--accent); border-radius: 2px; }
+  .feat { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+  .feat div { padding: 16px; border-radius: 14px; background: var(--panel); border: 2px solid var(--line); }
+  .feat b { display: block; margin-bottom: 4px; }
+  .feat .r { border-top: 3px solid var(--red); }
+  .feat .g { border-top: 3px solid var(--green); }
+  .feat .a { border-top: 3px solid var(--accent); }
+  .feat p { margin: 0; font-size: 14px; color: #c9d1d9; }
+
+  ul.links { list-style: none; padding: 0; margin: 0; }
+  ul.links li { margin: 6px 0; }
+  ul.links a { color: var(--accent); text-decoration: none; }
+  ul.links a:hover { text-decoration: underline; }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); }
+  footer nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 8px; }
+  footer a { color: var(--fg); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer a.todo { color: var(--muted); pointer-events: none; }
+  footer p { margin: 4px 0; }
+</style>
+</head>
+<body>
+<div class="top"><a href="../">← 스튜디오 차안 · Studio Chaahn</a></div>
+<main>
+  <section class="hero">
+    <img class="icon" src="assets/icon.png" alt="" width="256" height="256">
+    <img class="wordmark" src="assets/logo_ko.png" alt="앙가르드 En Garde" width="720" height="196">
+    <p class="tagline">1:1 실시간 펜싱 대전 모바일 게임<br><span class="en">Real-time 1v1 fencing for mobile</span></p>
+    <span class="status">출시 준비 중 · Coming soon (Android · iOS)</span>
+  </section>
+
+  <h2>게임 소개 · About</h2>
+  <div class="feat">
+    <div class="r"><b>실제 펜싱 규칙</b><p>공격권 · 막기 · 리포스트까지, 한 번의 찌르기로 갈리는 승부.</p></div>
+    <div class="g"><b>실시간 1:1 대전</b><p>랭크전과 친구 대전으로 사람과 겨뤄요.</p></div>
+    <div class="a"><b>대회와 기술</b><p>대회를 이겨 새 기술을 열고 나만의 조합을 만들어요.</p></div>
+  </div>
+
+  <h2>안내 · Info</h2>
+  <ul class="links">
+    <li><a href="https://app.notion.com/p/400a27003d5481998990e9c5ffd06b6a">공개 안내 (이용약관 · 계정 삭제 · 고객 지원 · 사업자 정보)</a></li>
+    <li>문의 · Contact: <a href="mailto:studiochaahn@gmail.com">studiochaahn@gmail.com</a></li>
+  </ul>
+</main>
+<footer>
+  <nav>
+    <!-- 개인정보처리방침: 노션 공개 페이지 URL 이 정해지면 href 를 바꾸고 class="todo" 를 지운다 -->
+    <a class="todo" href="#" id="privacy">개인정보처리방침 · Privacy Policy (준비 중)</a>
+    <a href="mailto:studiochaahn@gmail.com">문의 · Contact</a>
+    <a href="../">스튜디오 차안 · Studio Chaahn</a>
+  </nav>
+  <p>© 2026 스튜디오 차안 (Studio Chaahn)</p>
+</footer>
+</body>
+</html>
